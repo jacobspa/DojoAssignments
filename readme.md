@@ -1,0 +1,1 @@
+This file contains a large number of assignments that I worked on during my time at the Coding Dojo Developer Bootcamp. I will continue to update this with my projects as I move through the 14 week program.
