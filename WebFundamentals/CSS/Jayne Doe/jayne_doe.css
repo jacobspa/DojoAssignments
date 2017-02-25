@@ -1,0 +1,128 @@
+*{
+ margin: 0px;
+ padding: 0px;
+}
+#wrapper{
+  background:radial-gradient(#6F5964,#1D0D11);
+  padding-left:  50px;
+  padding-right: 50px;
+}
+#Header{
+  background-color:#F7F7F7;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+h1 {
+	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+	font-size: 48px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+  display: inline-block;
+}
+h2 {
+	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+  display: inline-block;
+  float: right;
+}
+#profile_pic{
+  width: 450px;
+  border: 5px solid #C0C0C0;
+  margin-right:15px;
+  margin-bottom: 15px;
+}
+#about_box{
+  background: linear-gradient(to right,#FFFEFF,#DBCCDA);
+  height: auto;
+  width: 680px;
+  display: inline-block;
+  float: right;
+  margin-top: 15px;
+}
+#about_box a{
+  color: black;
+  font-size:20px;
+  margin: 20px;
+}
+h3{
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 24px;
+  color: #f9f9f9;
+  background:radial-gradient(#878593,#B1B0B4);
+  margin-bottom:10px;
+}
+#about_paragraphs{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 20px;
+}
+#about_link{
+  font-size: 20px;
+}
+  #boxes{
+    height: 600px;
+    margin-bottom:40px;
+  }
+.subcontents{
+  width: 300px;
+  height: 100%;
+  margin: 10px 3%;
+  background:linear-gradient(to right, #FEFEFE,#DACBD9) #ededed;
+  display: inline-block;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14px;
+  vertical-align: top;
+}
+.subcontents:first-child p{
+  margin-bottom: 30%;
+}
+.subcontents:nth-child(2) p{
+  margin-bottom: 27%
+}
+.subcontents:last-child p{
+  margin-bottom: 17%;
+}
+button{
+  color: #F6F2D6;
+  font-size: 14px;
+  padding:3px;
+  margin: 20px 30%;
+  border: 2px solid black;
+  border-radius:10px;
+  background-color: #407D61
+}
+img{
+  width:300px;
+}
+h4{
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+	font-size: 18px;
+  color: #f4f4f4;
+  background-color: #a8a6a8;
+  margin-bottom: 7px;
+}
+.tech{
+  width:50px;
+}
+#contact_me{
+  background-color: #FFFFFF;
+  padding: 3px;
+  /*margin-top:40px;*/
+}
+.contact_bottom{
+  margin: 5px 35%;
+}
+.contact_pic {
+  width: 15px;
+}
+h5{
+  background-color:
+  ffont-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 18px;
+  margin: 5px 38%;
+}
