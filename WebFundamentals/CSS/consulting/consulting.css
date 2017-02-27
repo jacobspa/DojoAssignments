@@ -1,0 +1,162 @@
+#wrapper{
+  width: 970px;
+  background-color: #062134;
+  padding-bottom: 3px;
+}
+h1{
+  color: white;
+  display: inline-block;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 36px;
+  margin-left: 45px;
+}
+h1 span{
+  color:#1B99E8;
+}
+#header ul{
+  list-style-type: none;
+  display: inline-block;
+}
+#header ul li{
+  display: inline;
+  margin-left: 30px;
+}
+#header a{
+  text-decoration: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: white;
+  font-size: 18px;
+}
+#header li:first-child a{
+  color:red;
+
+}
+#white{
+  background-color:#FFFFFF;
+  width:850px;
+  margin: 25px;
+  padding: 30px;
+  padding-bottom: 15px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.middle{
+  background-color:#1468A8;
+  width: 255px;
+  height: 196px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  margin-top: 6px;
+}
+.middle img{
+  width: 35px;
+  mix-blend-mode: multiply;
+}
+h3{
+  display: inline-block;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: white;
+  font-size: 24px;
+  vertical-align: top;
+  margin-top: 5px;
+  margin-bottom:1px;
+}
+.middle p{
+  margin-top: 5px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: white;
+  font-size: 11px;
+}
+button{
+  display: inline-block;
+  width: 130px;
+  padding: 9px;
+  border-radius: 4px;
+  background: linear-gradient(#53B2ED,#1991DC);
+  border: 1px solid #1991DC;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  color: white;
+  vertical-align: bottom;
+  margin-top: 53px;
+}
+#first button{
+  margin-top: 40px;
+}
+#second button{
+  margin-top: 28px;
+}
+#first{
+  margin-right:7px;
+}
+#second{
+  margin-right: 7px;
+}
+.bottom{
+  width: 255px;
+  display: inline-block;
+  vertical-align: top;
+}
+.bottom p{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 11px;
+}
+#bottom_area img{
+  width:255px;
+}
+h4{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 17px;
+  margin-bottom: 7px;
+}
+#first_bottom{
+  margin-right: 30px;
+}
+#second_bottom{
+  margin-right: 30px;
+}
+#our{
+  margin-top: 53px;
+}
+.bottom a{
+  text-decoration: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #4A7EA4;
+}
+#test{
+  font-size: 15px;
+  font-style: italic;
+  background-color: #DAEDFF;
+  padding: 15px;
+  border-radius: 3px;
+}
+#bottom_blue{
+  background-color: #DAEDFF;
+  width: 910px;
+  margin-left: 25px;
+  margin-top: 2px;
+  margin-bottom:3px;
+  padding: 10px 0px;
+}
+#bottom_blue ul{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  list-style-type: none;
+  display: inline-block;
+  width: 300px;
+  margin-left: 280px;
+}
+#bottom_blue li{
+  display: inline;
+  margin-left: 15px;
+}
+#bottom_blue li a{
+  text-decoration: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+  vertical-align: middle;
+  color: #739FBF;
+}
