@@ -1,6 +1,6 @@
 function randomChance() {
   var coins = Math.floor(Math.random()*50)+50;
-  while (coins >= 0){
+  while (coins > 0){
     console.log("You have " + coins + " coins remaining")
     coins = coins - 1;
     var win = Math.floor(Math.random() * 100)+1

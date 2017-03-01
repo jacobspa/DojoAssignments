@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>jQuery functionality in action</title>
+      <meta charset="UTF-8">
+      <meta name="description" content="statements about this site">
+      <link rel="stylesheet" type="text/css" href="jQuery_functions.css">
+      <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready (function() {
+            $('#click').click(function() {
+              $(".red_p").css("background-color","red");
+            });
+            
+            $('#hide').click(function() {
+              $(".hide").hide();
+            });
+            $('#show').click(function() {
+              $(".show").show("slow");
+            });
+            $( "#toggle" ).click(function() {
+              $(".toggle" ).toggle( "slow", function() {
+            })});
+            $("#slide_down").click(function() {
+              $(".slide").slideDown("slow",function(){
+            })});
+            $("#slide_up").click(function() {
+              $(".slide_up").slideUp("slow",function(){
+            })});
+            $("#slide_toggle").click(function(){
+              $(".slide_toggle").slideToggle("slow",function(){   
+              })});
+            $("#fade_in").click(function(){
+              $(".ship").fadeIn(6000,function(){
+              });
+            });
+            $("#fade_out").click(function(){
+              $(".bank").fadeOut();
+            });
+            $("#add_class").click(function(){
+              $("#blank").addClass("blue_p")
+            });
+            $("#before").click(function(){
+              $(".before").before("<p>What is the Hood</p>");
+            });
+            $("#after").click(function(){
+              $(".after").after("<p>Both call their clients 'users'</p>");
+            });
+            $("#append").click(function(){
+              $(".append").append("<em>.  Not only can it add to paragraphs, but it can add child elements like divs or whatever tags you like. i.e. you could add all your h2 elements into the divs on your page</em>");
+            });
+            
+            $("#trying_this").click(function() {
+              var htmlString = $(this).html();
+              $(this).text(htmlString);
+              //console.log(htmlString)
+            });
+
+            // $(".html").click(function(){
+            //   var htmlString = $ (this).html();
+            //   $( this ).text( htmlString );
+            // });
+
+        
+
+            $(".clicked").click(function() {
+              $(this).attr({
+                alt:"Clicked Now"
+              });
+            });
+
+            $("#value1").click(function() {
+              $("input").val("You did it!!!!!!");
+            });
+
+            
+            $("#data").click(function() {
+              $("#data").data("name", " IT WORKED ");   
+              //console.log($("#data").data("name"));
+              //alert($("#data").data("name"))
+              $("span").text($("#data").data("name"));
+              
+
+            })
+
+
+
+          });
+
+      </script>
+    </head>
+    <body>
+      <button id="click">Click Me!</button>
+      <h1>.click function</h1>
+      <p class="red_p">Click the button to change the .css file for this paragraph!</p>
+      <hr>
+      
+      <button id="hide">Click Me!</button>
+      <h1>.hide function</h1>
+      <p class="hide">Click the button to hide this paragraph!<p>
+      <hr>
+      
+      <button id="show">Click Me!</button>
+      <h1>.show function</h1>
+      <p>Click the button to show the punchline!</p>
+      <p><strong>How did the programmer die in the shower?</strong></p>
+      <p style="display:none" class="show">---He followed the instructions: Lather, rinse, repeat</p>
+      <hr>
+
+      <button id="toggle">Click Me!</button>
+      <h1>.toggle function</h1>
+      <p>Click the button repeatedly to toggle the hidden image!</p>
+      <img src="http://nobacks.com/wp-content/uploads/2014/11/Banana-2-500x338.png" class="toggle" alt="banana">
+      <hr>
+
+      <button id="slide_down">Click Me!</button>
+      <h1>.slideDown function</h1>
+      <p>Click the button to slide down an image</p>
+      <img src="https://images-na.ssl-images-amazon.com/images/I/71vmk%2B2t1AL._AC_UL115_.jpg" class="slide" alt="slide">
+      <hr>
+
+      <button id="slide_up">Click Me!</button>
+      <h1>.slideUp function</h1>
+      <p>Click the button to slide up the displayed image</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3aFCOG01ShRoIO_knEv9PFJu50JAGGf5kPOOB9orfj4f75TAK" class="slide_up" alt="monkeys">
+      <hr>
+
+      <button id="slide_toggle">Click Me!</button>
+      <h1>.slideToggle function</h1>
+      <p>Click the button repeatedly to make Dieter Dance!</p>
+      <img src="http://i.amz.mshcdn.com/4TuT6ZeugoMD6e4Pzke2jO64NGE=/fit-in/850x850/http%3A%2F%2Fmashable.com%2Fwp-content%2Fgallery%2Fsnl-characters-we-want-to-see-return%2Fsnl-gallery-dieter.jpg" class="slide_toggle" alt="Dieter">
+      <hr>
+
+      <button id="fade_in">Click Me!</button>
+      <h1>.fadeIn function</h1>
+      <p>Click the button to fade in the hidden image</p>
+      <img src="http://www.shipschematics.net/startrek/images/klingon/attackship_unknown.jpg" class="ship" alt="klingons">
+      <hr>
+
+      <button id="fade_out">Click Me!</button>
+      <h1>.fadeOut function</h1>
+      <p>Click the button to watch my bank account disappear!</p>
+      <img src="http://www.hustlermoneyblog.com/wp-content/uploads/2014/06/Bank-Deals.png" class="bank" alt="monies">
+      <hr>
+
+      <button id="add_class">Click Me!</button>
+      <h1>.addClass function</h1>
+      <p id="blank">Click the button to add the blue class to this paragraph!!</p>
+      <hr>
+
+      <button id="before">Click Me!</button>
+      <h1>.before function</h1>
+      <p>Click the Button to play Jeopardy with the .before function!</p>
+      <p class="before">A Place People Live, also part of a sweatshirt</p>
+      <hr>
+
+      <button id="after">Click Me!</button>
+      <h1>.after function</h1>
+      <p>Jeopardy does things weird, lets find our answers .after the question</p>
+      <p class="after">What's a similarity between drug dealers and programmers?</p>
+      <hr>
+
+      <button id="append">Click Me!</button>
+      <h1>.append function</h1>
+      <p class="append">Clicking the button will append, or add, in to this existing paragraph</p>
+      <hr>
+      
+      <button>Does nothing, click on paragraph</button>
+      <h1>.html function</h1>
+      <p id="trying_this">Clicking this paragraph will then take this paragraph and list the <em>raw</em> html code of it.  in the code i'm also going to use the (this) function</p>
+      <hr>
+      
+
+      <button id="clicked">Does nothing, click image</button>
+      <h1>.attr function</h1>
+      <p>Clicking the image will make the alt attribute of the photo to change</p>
+      <img class="clicked" src="asdf" alt="unclicked">
+      <hr>
+
+      <button id="value1">Click Me!</button>
+      <h1>.val function</h1>
+      <p>Clicking the button changes the input in the field below</p>
+      <input type="text" value="click the button">
+      <hr>
+
+
+      <button id="data">Click Me!</button>
+      <h1>.data function</h1>
+      <p>Clicking the button will add an object of data stored to an element, displaying in a a blank span located<span></span> here.</p>
+      <hr>
+
+
+    </body>
+  </html>
+<!--
+[X]  .click
+[X]  .hide
+[X]  .show
+[X]  .toggle
+[X]  .slideDown
+[X]  .slideUp
+[X]  .slideToggle
+[X]  .fadeIn
+[X]  .fadeOut
+[X]  .addClass
+[X]  .before
+[X]  .after
+[X]  .append
+[X]  .html
+[X]  .attr
+[X]  .val
+[X]  .text
+[X]  .data
+-->

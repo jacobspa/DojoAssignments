@@ -1,0 +1,37 @@
+button {
+  display:inline-block;
+  height:100px;
+  width:150px;
+}
+h1 {
+  display:inline-block;
+  margin-left:400px;
+}
+p {
+  font-family:arial;
+  margin-left:400px;
+  background-color:gray;
+  width:700px;
+}
+.toggle , .slide {
+  display:none;
+}
+.slide_toggle {
+  width:200px;
+
+}
+.red_p {
+  background-color:gray;
+}
+.ship {
+  display:none;
+  width:400px;
+}
+.blue_p { 
+  background-color:blue;
+
+}
+.clicked {
+  width:100px;
+  height:100px;
+}
