@@ -1,0 +1,13 @@
+#pokepics{
+  width: 800px;
+  display: inline-block;
+}
+#pokedex{
+  width: 350px;
+  height: 550px;
+  display: inline-block;
+  vertical-align: top;
+  border: 15px solid red;
+  padding: 7px;
+  text-align: center;
+}
