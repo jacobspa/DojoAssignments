@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Turtles!</title>
+  </head>
+  <body>
+    {% if turtle == "turtle" %}
+    <h1>Leonardo, Michelangelo, Raphael, Donatello</h1>
+    <img src="{{ url_for('static', filename='tmnt.png') }}"><br>
+
+    {% elif turtle == "leonardo" %}
+    <h1>Leonardo</h1>
+    <img src="{{ url_for('static', filename='leonardo.jpg') }}"><br>
+    {% elif turtle == "michelangelo" %}
+    <h1>Michelangelo</h1>
+    <img src="{{ url_for('static', filename='michelangelo.jpg') }}"><br>
+    {% elif turtle == "raphael" %}
+    <h1>Raphael</h1>
+    <img src="{{ url_for('static', filename='raphael.jpg') }}"><br>
+    {% elif turtle == "donatello" %}
+    <h1>Donatello</h1>
+    <img src="{{ url_for('static', filename='donatello.jpg') }}"><br>
+    {% elif turtle == "hacker!" %}
+    <img src="{{ url_for('static', filename='notapril.jpg') }}"><br>
+    {% endif %}
+    <br>
+    <a href="/ninja">Display them all!</a>
+    <a href="/ninja/blue">Display Leonardo</a>
+    <a href="/ninja/orange">Display Michelangelo</a>
+    <a href="/ninja/red">Display Raphael</a>
+    <a href="/ninja/purple">Display Donatello</a>
+  </body>
+</html>
