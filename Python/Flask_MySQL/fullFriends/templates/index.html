@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Full Friends</title>
+  </head>
+  <body>
+    <h1>Friends</h1>
+    <p>Create More Pals!</p>
+    <form action="/friends" method="POST">
+      First Name: <input type=text name="html_first" value="">
+      Last Name: <input type="text" name="html_last" value="">
+      Email: <input type="text" name="html_email" value="">
+      <input type="submit" value="Create Friend">
+    </form>
+    <p>Here is a list of your few friends</p>
+    {% for friend in friends %}
+    <p>{{friend.first_name}}  {{friend.last_name}}</p>
+    <p>{{friend.email}}</p>
+    <form action="/friends/{{friend.id}}/edit" method="POST">
+      <input type='submit' value='Edit Friend'>
+    </form>
+    <form action='/friends/{{friend.id}}/delete' method='POST'>
+      <input type='submit' value='Delete Friend'>
+    </form>
+    {% endfor %}
+
+
+  </body>
+</html>

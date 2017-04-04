@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Full Friends</title>
+  </head>
+  <body>
+    <h1>Edit Your Friends below!</h1>
+    <p>they may not like it...</p>
+    <form action='/friends/{{session.id}}' method="POST">
+      First Name: <input type="text" name="html_first" value="">
+      Last Name: <input type="text" name="html_last" value="">
+      Email: <input type="text" name="html_email" value="">
+      <input type="submit" name="submit" value="Make Changes">
+    </form>
+  </body>
+</html>

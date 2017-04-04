@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Email Validation!</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form action="{% url 'validate:login'%}" method="POST">
+      {% csrf_token %}
+      Email: <input type="text" name="html_email" value=""><br><br>
+      Password: <input type="Password" name="html_password" value=""><br><br>
+      <input type="submit" name="submit" value="Login"><br>
+    </form>
+    <hr>
+    {% for m in messages %}
+    <p>{{m}}</p><br>
+    {% endfor %}
+
+    <br>
+    <h1>Register</h1>
+    <form action="{% url 'validate:register'%}" method="POST">
+      {% csrf_token %}
+      Email: <input type="text" name="html_email" value=""><br><br>
+      First Name: <input type="text" name="html_first" value=""><br><br>
+      Last Name: <input type="text" name="html_last" value=""><br><br>
+      Password: <input type="password" name="html_password" value=""><br><br>
+      Confirm Password: <input type="password" name="html_confirm" value=""><br><br>
+      <input type="submit" name="submit" value="register">
+      <br><br>
+      <hr>
+    </form>
+  </body>
+</html>
